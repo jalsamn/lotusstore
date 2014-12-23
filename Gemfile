@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record Dev
-gem 'sqlite3'
 # Use pg as the database for Active Record Production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -14,7 +13,13 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+group :development do
+  gem 'sqlite3'
+end
 
+group :production do
+  gem 'pg'
+end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -38,9 +43,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-group :production do
-  gem 'pg'
-end
 
 gem 'spree', '2.4.2'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
