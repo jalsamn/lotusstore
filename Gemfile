@@ -6,7 +6,6 @@ gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record Dev
 gem 'sqlite3'
 # Use pg as the database for Active Record Production
-gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,7 +38,9 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+group :production do
+  gem 'pg'
+end
 
 gem 'spree', '2.4.2'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
