@@ -34,7 +34,7 @@ module Lotusstore
     # config.i18n.default_locale = :de
     #config.allow_ssl_in_production = false
     
-    config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
 
 
   end
