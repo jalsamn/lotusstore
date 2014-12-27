@@ -5,28 +5,23 @@ $icon-font-path: "../../bootstrap/";
 
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
-  background: #ffffff ;
+  background: #749B46 center;
   background-size: cover;
   margin-bottom: $line-height-computed;
   #header {
-    height: 80px;
-    color: #fff;
-    background: #749B46;
+    background: rgba(9, 22, 33, 0.4);
     padding: $line-height-computed 0;
   }
   #logo {
     margin-bottom: 10px;
-    color: #fff;
     img {
       width: 306px;
     }
   }
   .nav a {
-    color: #749B46;
-    border: 1px solid #749B46;
+    color: #fff;
     &:hover {
-      color: #fff;
-      background:#749B46;
+      background:rgba(9, 22, 33, 0.4);
     }
   }
   .navbar {
