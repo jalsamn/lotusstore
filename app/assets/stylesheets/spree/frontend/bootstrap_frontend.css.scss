@@ -1,0 +1,59 @@
+//Add your custom bootstrap variables here, see https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss for full list of variables.
+
+$icon-font-path: "../../bootstrap/";
+@import "bootstrap";
+
+// -- Spree Custom Header and Footer ---------------------
+#spree-header {
+  background: #ffffff ;
+  background-size: cover;
+  margin-bottom: $line-height-computed;
+  #header {
+    height: 80px;
+    color: #fff;
+    background: #749B46;
+    padding: $line-height-computed 0;
+  }
+  #logo {
+    margin-bottom: 10px;
+    color: #fff;
+    img {
+      width: 306px;
+    }
+  }
+  .nav a {
+    color: #749B46;
+    border: 1px solid #749B46;
+    &:hover {
+      color: #fff;
+      background:#749B46;
+    }
+  }
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+#spree-footer {
+  background: $gray-light;
+  padding-top: $padding-base-horizontal;
+  margin-top: $line-height-computed;
+  color: #fff;
+}
+
+// -- Spree Layout Custom Rules -------------------------
+
+//TODO, bug #6
+.alert-error, .alert-registration_error { @extend .alert-danger; }
+.alert-alert { @extend .alert-info; }
+.alert-notice { @extend .alert-info; }
+
+.product-body {
+  height: 170px;
+}
+.progress-steps {
+  margin-top: $line-height-computed;
+}
+h1 {
+  margin-bottom: 30px;
+}
