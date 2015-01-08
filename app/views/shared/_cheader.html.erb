@@ -1,5 +1,6 @@
-<div id="spree-header">
 
+
+<div id="spree-header">
   <header id="header" data-hook>
     <div class="container">
       <div class="row">
@@ -13,5 +14,24 @@
   <div class="container">
     <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
   </div>
+  
+  <ul class="jetmenu">
+     <li class="active"><%= link_to Spree.t(:home), spree.root_path %></li>
+     <script>Spree.fetch_cart()</script>
+     <li><a href="#">Groceries</a>
+          <div class="megamenu">
+               <div class="col1"></div>
+                    <div class="col1">Item</div>
+                    <div class="col1">Item</div>
+                    <div class="col1">Item</div>
+                    <div class="col1">Item</div>
+                    <div class="col1">Item</div>
+          </div>
+     </li>
+    <li><a href="#">Household</a></li>
+    <li><a href="#">Recipes</a></li>
+    <li><%= link_to Spree.t(:cart), '/cart' %></li>
+
+</ul>
 
 </div>

@@ -8,3 +8,7 @@
 //= require jquery_ujs
 //= require spree/frontend
 //= require_tree .
+
+     jQuery(document).ready(function() {
+          $().jetmenu();
+     });
