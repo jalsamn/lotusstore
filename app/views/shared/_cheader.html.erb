@@ -1,5 +1,3 @@
-
-
 <div id="spree-header">
   <header id="header" data-hook>
     <div class="container">
@@ -7,17 +5,19 @@
         <figure id="logo" class="col-md-4" data-hook>
           <h1> Lotus Delivery </h1>
         </figure>
-        <%= render :partial => 'spree/shared/nav_bar' %>
+     <%= render :partial => 'spree/shared/nav_bar' %>
       </div>
+      
     </div>
   </header>
-  <div class="container">
-    <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
-  </div>
-  
-  <ul class="jetmenu">
+
+<!-- STYLE FOR SPREE-JETHEADER IS LOCATED IN BOOTSTRAP_CUSTOM -->
+<div id="spree-jetheader">
+  <header id="jetheader" data-hook>
+    <div class="container">
+      <div class="row">
+          <ul class="jetmenu yellow">
      <li class="active"><%= link_to Spree.t(:home), spree.root_path %></li>
-     <script>Spree.fetch_cart()</script>
      <li><a href="#">Groceries</a>
           <div class="megamenu">
                <div class="col1"></div>
@@ -30,8 +30,20 @@
      </li>
     <li><a href="#">Household</a></li>
     <li><a href="#">Recipes</a></li>
-    <li><%= link_to Spree.t(:cart), '/cart' %></li>
+    <li id="link-to-cart" data-hook>
+        <noscript>
+          <%= link_to Spree.t(:cart), '/cart' %>
+        </noscript>
+        &nbsp;
+    </li>
+    <script>Spree.fetch_cart()</script>
 
 </ul>
+      </div>
+    </div>
+  </header>
+  </div>
 
-</div>
+  </div>
+
+
