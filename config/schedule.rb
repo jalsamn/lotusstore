@@ -22,3 +22,5 @@
  every 6.hours do  
    runner "update.rb"
  end
+
+set :output, '/var/www/apps/12444/current/log/custom_deploy_after_migrate.log'
