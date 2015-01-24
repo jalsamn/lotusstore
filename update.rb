@@ -1,6 +1,7 @@
 require 'csv'
 require 'net/ftp'
 require 'sendgrid-ruby'
+require 'mail'
 
 ftp = Net::FTP.new
 ftp.connect("lotusdelivery.com",21)
@@ -26,17 +27,7 @@ puts ""
 puts "Update Completed"
 puts unupdatable
 
-client = SendGrid::Client.new(api_user: 'jalsamn', api_key: 'krishna1')
-
-email = SendGrid::Mail.new do |m|
-  m.to      = 'jalsamn@gmail.com'
-  m.from    = 'you@youremail.com'
-  m.subject = 'Sending with SendGrid is Fun'
-  m.html    = unupdatable
-end
-
-client.send(email)
-
+ErrorMailer.error_email(unupdatable).deliver
 
 puts "Email sent"
 

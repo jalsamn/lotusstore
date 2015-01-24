@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Product update errors</h1>
+    <p>
+     
+
+      <%= @unupdatable.each_line do |u| %>
+      <li><%= u %></li>
+      <% end %>
+    </p>
+
+  </body>
+</html>

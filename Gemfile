@@ -47,6 +47,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'spree_testscaffold', :path => '../spree_testscaffold'
+gem 'spree_deliverymanager', :path => '../spree_deliverymanager'
+
 gem 'mail'
 gem 'whenever', :require => false
 gem 'sendgrid-ruby'

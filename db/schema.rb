@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141223073156) do
+ActiveRecord::Schema.define(version: 20150124075624) do
+
+  create_table "aremanagers", force: true do |t|
+    t.integer  "zipcode"
+    t.integer  "zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "articles", force: true do |t|
+    t.string   "name"
+    t.string   "author"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "deliveryzones", force: true do |t|
+    t.integer  "zipcode"
+    t.integer  "zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
@@ -25,6 +46,15 @@ ActiveRecord::Schema.define(version: 20141223073156) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+
+  create_table "reviews", force: true do |t|
+    t.integer  "product_id"
+    t.string   "name"
+    t.integer  "rating"
+    t.text     "review"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -69,6 +99,20 @@ ActiveRecord::Schema.define(version: 20141223073156) do
   add_index "spree_adjustments", ["eligible"], name: "index_spree_adjustments_on_eligible"
   add_index "spree_adjustments", ["order_id"], name: "index_spree_adjustments_on_order_id"
   add_index "spree_adjustments", ["source_id", "source_type"], name: "index_spree_adjustments_on_source_id_and_source_type"
+
+  create_table "spree_areamanagers", force: true do |t|
+    t.integer  "zipcode"
+    t.integer  "zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_articles", force: true do |t|
+    t.string   "name"
+    t.string   "author"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_assets", force: true do |t|
     t.integer  "viewable_id"
@@ -281,6 +325,7 @@ ActiveRecord::Schema.define(version: 20141223073156) do
     t.integer  "canceler_id"
     t.integer  "store_id"
     t.integer  "state_lock_version",                                         default: 0,       null: false
+    t.integer  "timeslot_id"
   end
 
   add_index "spree_orders", ["approver_id"], name: "index_spree_orders_on_approver_id"
@@ -406,6 +451,8 @@ ActiveRecord::Schema.define(version: 20141223073156) do
     t.datetime "updated_at"
     t.boolean  "promotionable",        default: true
     t.string   "meta_title"
+    t.string   "deliveryslot"
+    t.integer  "timeslot_id"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on"
@@ -618,6 +665,15 @@ ActiveRecord::Schema.define(version: 20141223073156) do
   add_index "spree_return_items", ["customer_return_id"], name: "index_return_items_on_customer_return_id"
   add_index "spree_return_items", ["exchange_inventory_unit_id"], name: "index_spree_return_items_on_exchange_inventory_unit_id"
 
+  create_table "spree_reviews", force: true do |t|
+    t.integer  "product_id"
+    t.string   "name"
+    t.integer  "rating"
+    t.text     "review"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "spree_roles", force: true do |t|
     t.string "name"
   end
@@ -646,6 +702,7 @@ ActiveRecord::Schema.define(version: 20141223073156) do
     t.decimal  "promo_total",          precision: 10, scale: 2, default: 0.0
     t.decimal  "included_tax_total",   precision: 10, scale: 2, default: 0.0, null: false
     t.decimal  "pre_tax_amount",       precision: 8,  scale: 2, default: 0.0
+    t.integer  "timeslot_id"
   end
 
   add_index "spree_shipments", ["address_id"], name: "index_spree_shipments_on_address_id"
@@ -903,6 +960,13 @@ ActiveRecord::Schema.define(version: 20141223073156) do
   add_index "spree_taxons_prototypes", ["prototype_id"], name: "index_spree_taxons_prototypes_on_prototype_id"
   add_index "spree_taxons_prototypes", ["taxon_id"], name: "index_spree_taxons_prototypes_on_taxon_id"
 
+  create_table "spree_timeslots", force: true do |t|
+    t.date     "ddate"
+    t.string   "dtime"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "spree_tokenized_permissions", force: true do |t|
     t.integer  "permissable_id"
     t.string   "permissable_type"
@@ -984,6 +1048,13 @@ ActiveRecord::Schema.define(version: 20141223073156) do
   add_index "spree_variants", ["sku"], name: "index_spree_variants_on_sku"
   add_index "spree_variants", ["tax_category_id"], name: "index_spree_variants_on_tax_category_id"
   add_index "spree_variants", ["track_inventory"], name: "index_spree_variants_on_track_inventory"
+
+  create_table "spree_zipcodes", force: true do |t|
+    t.integer  "code"
+    t.integer  "zone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_zone_members", force: true do |t|
     t.integer  "zoneable_id"
