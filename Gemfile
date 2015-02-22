@@ -21,6 +21,8 @@ group :development do
   gem 'sqlite3'
 end
 
+gem  'ninefold'
+
 group :production do
   gem 'pg'
 end
@@ -48,10 +50,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'spree_testscaffold', :path => '../spree_testscaffold'
-gem 'spree_deliverymanager', :path => '../spree_deliverymanager'
-gem 'spree_revel_connector', :path => '../spree_revel_connector'
-gem 'spree_lotus_warehouse_manager', :path => '../spree_lotus_warehouse_manager'
+
+gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
+gem 'spree_lotus_warehouse_manager', github: 'jalsamn/spree_lotus_warehouse_manager', branch: 'master'
 
 
 gem 'mail'

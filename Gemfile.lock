@@ -17,6 +17,22 @@ GIT
       spree_bootstrap
 
 GIT
+  remote: git://github.com/jalsamn/spree_deliverymanager.git
+  revision: fe8332fb0ec6e91fa31d59ed7115929454231b3c
+  branch: master
+  specs:
+    spree_deliverymanager (2.4.2)
+      spree_core (~> 2.4.2)
+
+GIT
+  remote: git://github.com/jalsamn/spree_lotus_warehouse_manager.git
+  revision: 179795ab9066f20d003f2c30392dc6c2059a1b05
+  branch: master
+  specs:
+    spree_lotus_warehouse_manager (2.4.2)
+      spree_core (~> 2.4.2)
+
+GIT
   remote: git://github.com/spree/spree_auth_devise.git
   revision: e2ee95e53de65d516c93eeb3246bc11d9f7ce15a
   branch: 2-4-stable
@@ -35,30 +51,6 @@ GIT
   specs:
     spree_gateway (2.4.0)
       spree_core (~> 2.4.0)
-
-PATH
-  remote: ../spree_deliverymanager
-  specs:
-    spree_deliverymanager (2.4.2)
-      spree_core (~> 2.4.2)
-
-PATH
-  remote: ../spree_lotus_warehouse_manager
-  specs:
-    spree_lotus_warehouse_manager (2.4.2)
-      spree_core (~> 2.4.2)
-
-PATH
-  remote: ../spree_revel_connector
-  specs:
-    spree_revel_connector (2.4.2)
-      spree_core (~> 2.4.2)
-
-PATH
-  remote: ../spree_testscaffold
-  specs:
-    spree_testscaffold (2.4.2)
-      spree_core (~> 2.4.2)
 
 GEM
   remote: https://rubygems.org/
@@ -153,6 +145,8 @@ GEM
       dotenv (= 1.0.2)
     erubis (2.7.0)
     execjs (2.2.2)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
     ffaker (1.31.0)
     font-awesome-rails (4.2.0.0)
       railties (>= 3.2, < 5.0)
@@ -188,7 +182,13 @@ GEM
       i18n (>= 0.6.4, <= 0.7.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     netrc (0.10.2)
+    ninefold (1.7.4)
+      faraday (~> 0.8)
+      json (~> 1.7)
+      netrc (~> 0.7)
+      thor (~> 0.19)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     offsite_payments (2.0.1)
@@ -364,6 +364,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mail
+  ninefold
   pg
   rails (= 4.1.8)
   sass-rails (~> 4.0.3)
@@ -375,8 +376,6 @@ DEPENDENCIES
   spree_deliverymanager!
   spree_gateway!
   spree_lotus_warehouse_manager!
-  spree_revel_connector!
-  spree_testscaffold!
   spring
   sqlite3
   turbolinks
