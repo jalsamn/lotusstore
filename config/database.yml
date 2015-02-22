@@ -25,6 +25,4 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: spreecommerceprod
   pool: 5
-  password:  

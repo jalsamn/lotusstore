@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221214732) do
+ActiveRecord::Schema.define(version: 20150222034920) do
 
   create_table "aremanagers", force: true do |t|
     t.integer  "zipcode"
@@ -1057,6 +1057,7 @@ ActiveRecord::Schema.define(version: 20150221214732) do
     t.boolean  "multiplebarcode"
     t.integer  "barcode"
     t.integer  "vendor_id"
+    t.integer  "revel_id"
   end
 
   add_index "spree_variants", ["deleted_at"], name: "index_spree_variants_on_deleted_at"
