@@ -21,6 +21,8 @@ group :development do
   gem 'sqlite3'
 end
 
+gem 'figaro'
+
 gem  'ninefold'
 
 group :production do
