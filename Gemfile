@@ -50,6 +50,8 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'rails_12factor', group: :production
+
 
 gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
 gem 'spree_lotus_warehouse_manager', github: 'jalsamn/spree_lotus_warehouse_manager', branch: 'master'
