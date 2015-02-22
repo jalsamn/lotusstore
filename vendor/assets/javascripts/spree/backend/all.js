@@ -9,7 +9,5 @@
 //= require spree/backend
 
 //= require_tree .
-//= require spree/backend/spree_testscaffold
 //= require spree/backend/spree_deliverymanager
-//= require spree/backend/spree_revel_connector
 //= require spree/backend/spree_lotus_warehouse_manager

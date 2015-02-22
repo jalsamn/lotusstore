@@ -11,10 +11,6 @@
 
      jQuery(document).ready(function() {
           $().jetmenu();
-     });//= require spree/frontend/spree_zipcodemanagement
-//= require spree/frontend/spree_deliveryareamanager
-//= require spree/frontend/spree_reviews
-//= require spree/frontend/spree_testscaffold
+     });
 //= require spree/frontend/spree_deliverymanager
-//= require spree/frontend/spree_revel_connector
 //= require spree/frontend/spree_lotus_warehouse_manager
