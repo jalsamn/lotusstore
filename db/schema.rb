@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150124075624) do
+ActiveRecord::Schema.define(version: 20150221214732) do
 
   create_table "aremanagers", force: true do |t|
     t.integer  "zipcode"
@@ -674,6 +674,19 @@ ActiveRecord::Schema.define(version: 20150124075624) do
     t.datetime "updated_at"
   end
 
+  create_table "spree_revproducts", force: true do |t|
+    t.string   "name"
+    t.integer  "sku"
+    t.integer  "barcode"
+    t.string   "category"
+    t.decimal  "pointvalue"
+    t.decimal  "cost"
+    t.decimal  "price"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "spree_roles", force: true do |t|
     t.string "name"
   end
@@ -1039,6 +1052,11 @@ ActiveRecord::Schema.define(version: 20150124075624) do
     t.integer  "tax_category_id"
     t.datetime "updated_at"
     t.integer  "stock_items_count",                          default: 0,     null: false
+    t.boolean  "expireable"
+    t.boolean  "pestissue"
+    t.boolean  "multiplebarcode"
+    t.integer  "barcode"
+    t.integer  "vendor_id"
   end
 
   add_index "spree_variants", ["deleted_at"], name: "index_spree_variants_on_deleted_at"
@@ -1048,6 +1066,22 @@ ActiveRecord::Schema.define(version: 20150124075624) do
   add_index "spree_variants", ["sku"], name: "index_spree_variants_on_sku"
   add_index "spree_variants", ["tax_category_id"], name: "index_spree_variants_on_tax_category_id"
   add_index "spree_variants", ["track_inventory"], name: "index_spree_variants_on_track_inventory"
+
+  create_table "spree_vendors", force: true do |t|
+    t.string   "vendorname"
+    t.string   "contactname"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "country"
+    t.string   "state"
+    t.integer  "zip"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_zipcodes", force: true do |t|
     t.integer  "code"

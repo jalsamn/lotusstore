@@ -8,6 +8,7 @@ gem 'rails', '4.1.8'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
+gem 'yajl-ruby', require: 'yajl'
 
 gem 'dotenv-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,6 +50,9 @@ gem 'spring',        group: :development
 
 gem 'spree_testscaffold', :path => '../spree_testscaffold'
 gem 'spree_deliverymanager', :path => '../spree_deliverymanager'
+gem 'spree_revel_connector', :path => '../spree_revel_connector'
+gem 'spree_lotus_warehouse_manager', :path => '../spree_lotus_warehouse_manager'
+
 
 gem 'mail'
 gem 'whenever', :require => false
