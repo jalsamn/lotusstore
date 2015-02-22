@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222034920) do
+ActiveRecord::Schema.define(version: 20150222213239) do
 
   create_table "aremanagers", force: true do |t|
     t.integer  "zipcode"
@@ -453,6 +453,7 @@ ActiveRecord::Schema.define(version: 20150222034920) do
     t.string   "meta_title"
     t.string   "deliveryslot"
     t.integer  "timeslot_id"
+    t.integer  "revel_id"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on"
