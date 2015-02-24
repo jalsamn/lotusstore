@@ -21,6 +21,11 @@ group :development do
   gem 'sqlite3'
 end
 
+#For PDF generation
+gem 'prawn_rails'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
 gem 'figaro'
 
 gem  'ninefold'
