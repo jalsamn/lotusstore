@@ -1,4 +1,6 @@
-@prods = Spree::Variant.where(vendor_id: nil)
-@prods.each do |vendor|
+    @vars = Spree::Variant.all 
+@vars.each do |vendor|
+  puts vendor.barcode
+  puts vendor.vendor_id
   puts vendor.total_on_hand
 end

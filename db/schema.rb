@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222213239) do
+ActiveRecord::Schema.define(version: 20150223234619) do
 
   create_table "aremanagers", force: true do |t|
     t.integer  "zipcode"
@@ -568,6 +568,24 @@ ActiveRecord::Schema.define(version: 20150222213239) do
 
   create_table "spree_prototypes", force: true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_purchase_order_items", force: true do |t|
+    t.integer  "product_id"
+    t.integer  "purchase_order_id"
+    t.integer  "quantity"
+    t.text     "quantitytype"
+    t.boolean  "active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_purchase_orders", force: true do |t|
+    t.integer  "vendor_id"
+    t.boolean  "received"
+    t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
