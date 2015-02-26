@@ -60,7 +60,7 @@ gem 'rails_12factor', group: :production
 
 gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
 #gem 'spree_lotus_warehouse_manager', :path => '../spree_lotus_warehouse_manager'
-#gem 'spree_lotus_warehouse_manager', github: 'jalsamn/spree_lotus_warehouse_manager', branch: 'master'
+gem 'spree_lotus_warehouse_manager', github: 'jalsamn/spree_lotus_warehouse_manager', branch: 'master'
 
 gem 'mail'
 gem 'whenever', :require => false
