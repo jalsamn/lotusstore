@@ -25,14 +25,6 @@ GIT
       spree_core (~> 2.4.2)
 
 GIT
-  remote: git://github.com/jalsamn/spree_lotus_warehouse_manager.git
-  revision: 86a29c10eb744a62e3db817276f82ce009377f35
-  branch: master
-  specs:
-    spree_lotus_warehouse_manager (2.4.2)
-      spree_core (~> 2.4.2)
-
-GIT
   remote: git://github.com/spree/spree_auth_devise.git
   revision: 997382fcb1f6ed78a201ee7016384cfe71745aea
   branch: 2-4-stable
@@ -378,7 +370,6 @@ DEPENDENCIES
   spree_bootstrap_frontend!
   spree_deliverymanager!
   spree_gateway!
-  spree_lotus_warehouse_manager!
   spring
   sqlite3
   turbolinks
