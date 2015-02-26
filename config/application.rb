@@ -36,6 +36,7 @@ module Lotusstore
     config.assets.paths += Dir["#{Rails.root}/vendor/asset-libs/*"].sort_by { |dir| -dir.size }
     config.assets.initialize_on_precompile = false
 
+    
 
   end
 end
