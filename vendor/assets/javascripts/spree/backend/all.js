@@ -10,4 +10,4 @@
 
 //= require_tree .
 //= require spree/backend/spree_deliverymanager
-//= require spree/backend/spree_lotus_warehouse_manager
+// require spree/backend/spree_lotus_warehouse_manager
