@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150223234619) do
+ActiveRecord::Schema.define(version: 20150226234218) do
 
   create_table "aremanagers", force: true do |t|
     t.integer  "zipcode"
@@ -1101,6 +1101,7 @@ ActiveRecord::Schema.define(version: 20150223234619) do
     t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "rvid"
   end
 
   create_table "spree_zipcodes", force: true do |t|

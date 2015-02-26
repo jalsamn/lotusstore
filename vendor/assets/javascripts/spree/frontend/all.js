@@ -14,3 +14,4 @@
      });
 //= require spree/frontend/spree_deliverymanager
 // require spree/frontend/spree_lotus_warehouse_manager
+//= require spree/frontend/spree_lotus_warehouse_manager

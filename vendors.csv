@@ -1,0 +1,31 @@
+ID,Vendor name,Contact name,Email,Phone number,Address line 1,Address line 2,City,Country,State,Zip code,Shipping terms,Fob,Tax rate,Active
+1,Raja Foods Chicago,Javid,javid@rajafoods.com,847.675.4455,8110 N. St. Louis Ave.,,Skokie,USA,IL,60076,,,0.0000,Yes
+2,Nuts and Spices,Sanjay Birla,nutsandspice@gmail.com,510-429-4910 ext 1401,30315 Union City Blvd,,Union City,USA,CA,94587,,,0.0000,Yes
+3,Lotus Warehouse,Gunjan Patel,gpatel@janakfoods.com,6512020114,2043 S Alma School Rd,,Mesa,USA,AZ,85210,,,0.0000,Yes
+4,24 Mantra,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+5,Apna Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+6,Babco Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+7,Balaji Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+8,Continental Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+9,Costas International,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+10,Darbar Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+11,Deccan Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+12,Desi Roti,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+13,House of Spices,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+14,IGS,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+15,Indian Nectar,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+16,Jalaram Produce,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+17,Janak Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+18,Malabar Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+19,Muktanand Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+20,Nanak Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+21,Prayosha Imports,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+22,Produce,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+23,SBL Global,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+24,Shah Distributors,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+25,Shastha Foods,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+26,Spicy World,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+27,Walmart,CN,email,1234567890,address,,city,USA,state,12345,,,0.0000,Yes
+28,Deep Foods,CN,email@gmail.com,123456789,address line 1,,city,USA,ST,123456,,,,Yes
+29,Discontinued,Discontinued,email@email.com,1234567890,2043 S Alma School Rd,,Mesa,USA,AZ,85210,,,,Yes
+30,Multiple Vendor,Gunjan Patel,email@email.com,6512020114,2043 S Alma School Rd,,Mesa,USA,AZ,85210,,,,Yes
