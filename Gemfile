@@ -22,13 +22,11 @@ group :development do
 end
 
 #For PDF generation
-gem 'prawn_rails'
+
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
 gem 'figaro'
-
-gem  'ninefold'
 
 group :production do
   gem 'pg'
