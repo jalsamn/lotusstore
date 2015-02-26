@@ -227,5 +227,5 @@ rmdir -p /home/action/lotusstore/vendor/cache/ruby/2.1.0/gems/nokogiri-1.6.6.2/e
 rm -rf /home/action/lotusstore/vendor/cache/ruby/2.1.0/gems/nokogiri-1.6.6.2/ports
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20150226-2149-c3e9cw/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20150226-2199-d2i9zb/nokogiri
 installing default nokogiri libraries
