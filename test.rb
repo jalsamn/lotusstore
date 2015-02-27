@@ -1,25 +1,22 @@
 require 'csv'
 n = 1
  
-CSV.foreach("vendors.csv", :headers => true) do |row| 
-  if n != 0
-    puts "Adding new Vendor: #{row[1]}"
-    p = Spree::Vendor.new()
-    p.rvid = row[0]
-    p.vendorname = row[1]
-    p.contactname = row[2]
-    p.email = row[3]
-    p.phone = row[4]
-    p.address1 = row[5]
-    p.city = row[7]
-    p.country = row[8]
-    p.state = row[9]
-    p.zip = row[10]
-    p.active = true
-    p.save!
-  end
-  n += 1
-end
+unupdatable = ""
  
+CSV.foreach('vendoritems.csv', :headers => true) do |row| 
+    begin
+      puts "Updating vendor for Item: #{row[4]}"
+      v = Spree::Variant.find_by_barcode(row[5])
+      vendor = Spree::Vendor.find_by_vendorname(row[1])
+      v.vendor_id = vendor.id
+      v.save!
+      
+    rescue
+      unupdatable = unupdatable + "Could not update Stock for sku: #{row[4]}"
+      unupdatable = unupdatable + "\n"
+    end
+  end
+
 puts ""
-puts "Import Completed - Added: #{n} Vendors"
+puts "Update Completed"
+puts unupdatable

@@ -15,7 +15,7 @@ unupdatable = ""
 CSV.foreach("update.csv") do |row| 
     begin
       puts "Updating Stock for sku: #{row[0]}"
-      v = Spree::Variant.find_by_sku(row[0])
+      v = Spree::Variant.find_by_barcode(row[5])
       v.stock_items.find(v).set_count_on_hand(row[1])
     rescue
       unupdatable = unupdatable + "Could not update Stock for sku: #{row[0]}"
