@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git://github.com/jalsamn/spree_lotus_warehouse_manager.git
-  revision: 62d13e8ddef9f064c0f282777b416d2f53462ec1
+  revision: 54d8d8c71336a81d2927b5bad5a3df4d0c8bbc73
   branch: master
   specs:
     spree_lotus_warehouse_manager (2.4.2)
