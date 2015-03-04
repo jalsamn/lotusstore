@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150226234218) do
+ActiveRecord::Schema.define(version: 20150304015915) do
 
   create_table "aremanagers", force: true do |t|
     t.integer  "zipcode"
@@ -991,6 +991,18 @@ ActiveRecord::Schema.define(version: 20150226234218) do
 
   add_index "spree_taxons_prototypes", ["prototype_id"], name: "index_spree_taxons_prototypes_on_prototype_id"
   add_index "spree_taxons_prototypes", ["taxon_id"], name: "index_spree_taxons_prototypes_on_taxon_id"
+
+  create_table "spree_temp_po_items", force: true do |t|
+    t.integer "po_id"
+    t.integer "variant_id"
+  end
+
+  create_table "spree_temp_pos", force: true do |t|
+    t.integer  "po_id"
+    t.integer  "var_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_timeslots", force: true do |t|
     t.date     "ddate"

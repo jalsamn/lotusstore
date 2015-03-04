@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git://github.com/jalsamn/spree_lotus_warehouse_manager.git
-  revision: f14647d2f2568a54a9c2fd0dd7439b14b8c2227a
+  revision: 62d13e8ddef9f064c0f282777b416d2f53462ec1
   branch: master
   specs:
     spree_lotus_warehouse_manager (2.4.2)
@@ -115,7 +115,7 @@ GEM
     cldr-plurals-runtime-rb (1.0.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.5)
+    cocaine (0.5.7)
       climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -180,7 +180,7 @@ GEM
       money (~> 6.5.0)
     money (6.5.1)
       i18n (>= 0.6.4, <= 0.7.0)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     multi_xml (0.5.5)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
