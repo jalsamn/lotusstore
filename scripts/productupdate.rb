@@ -1,3 +1,5 @@
+require 'net/ftp'
+
 result1 = system("wget --header 'API-AUTHENTICATION: 288c79b9556747d6a66da933720b484a:aecdb2f39e8a4499980dd98a2f083856c547129de799420fa80ed302f51608cd' 'https://lotusmarket.revelup.com/resources/Product/?format=json&limit=5000000000' -O 'scripts/jsonoutput/RevProducts.json'")
 if result1.nil?
   puts "Error was #{$?}"
@@ -5,6 +7,20 @@ elsif result1
   puts "Grabbed the JSON from Revel!"
 end
   
+########## BEGIN FTP TRANSFER #########
+
+ftp = Net::FTP.new
+ftp.connect("lotusdelivery.com",21)
+ftp.login("jalsamn","t9zVhn~ckCz4")
+ftp.chdir("/public_html")
+ftp.passive = true
+
+file = "scripts/jsonoutput/RevProducts.json"
+
+ftp.putbinaryfile(file, remotefile = File.basename(file))
+ftp.close
+
+
 ################### UPDATE / INSERT PRODUCT PART ######################
   json = File.new('scripts/jsonoutput/RevProducts.json', 'r')
   parser = Yajl::Parser.new
