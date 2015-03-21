@@ -1,5 +1,7 @@
 puts "Starting vendor export"
 require 'csv'
+require 'net/ftp'
+
 
 @vars = Spree::Variant.where(vendor_id: nil)
 
