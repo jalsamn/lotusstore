@@ -9,7 +9,7 @@ CSV.foreach("prodwithoutvendor.csv") do |row|
     begin
       #puts "Updating Vendor for product: #{row[1]}"
       v = Spree::Variant.find(row[0])
-      vendor = Spree::Vendor.find_by_vendorname(row[1])
+      vendor = Spree::Vendor.find_by_vendorname(row[3])
       v.vendor_id = vendor.id
       v.save!
       puts "Updated Vendor for product: #{row[1]}"
