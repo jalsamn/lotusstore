@@ -7,11 +7,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require spree/frontend
+//= require spree/frontend/spree_deliverymanager
 //= require_tree .
 
      jQuery(document).ready(function() {
           $().jetmenu();
      });
-//= require spree/frontend/spree_deliverymanager
-// require spree/frontend/spree_lotus_warehouse_manager
-//= require spree/frontend/spree_lotus_warehouse_manager

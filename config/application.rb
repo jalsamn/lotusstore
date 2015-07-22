@@ -9,6 +9,8 @@ Bundler.require(*Rails.groups)
 module Lotusstore
   class Application < Rails::Application
     
+    
+    
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -36,7 +38,12 @@ module Lotusstore
     config.assets.paths += Dir["#{Rails.root}/vendor/asset-libs/*"].sort_by { |dir| -dir.size }
     config.assets.initialize_on_precompile = false
 
-    
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :delete, :put, :post, :options]
+      end
+    end
 
   end
 end

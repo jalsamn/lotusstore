@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record Dev
 # Use pg as the database for Active Record Production
 # Use SCSS for stylesheets
@@ -10,7 +10,7 @@ gem 'sass-rails', '~> 4.0.3'
 
 gem 'yajl-ruby', require: 'yajl'
 
-gem 'dotenv-rails'
+#gem 'dotenv-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -56,18 +56,16 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+gem 'rack-cors', :require => 'rack/cors'
 
 
 gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
-#gem 'spree_lotus_warehouse_manager', :path => '../spree_lotus_warehouse_manager'
-gem 'spree_lotus_warehouse_manager', github: 'jalsamn/spree_lotus_warehouse_manager', branch: 'master'
-#gem 'spree_custom_homepage', :path => '../spree_custom_homepage'
 
 
 gem 'mail'
 gem 'whenever', :require => false
 gem 'sendgrid-ruby'
-gem 'spree', '2.4.2'
-gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
-gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: 'master'
+gem 'spree', github: 'spree/spree', branch: '3-0-stable'
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+#gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: 'master'
