@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record Dev
 # Use pg as the database for Active Record Production
 # Use SCSS for stylesheets
@@ -58,14 +58,14 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 gem 'rack-cors', :require => 'rack/cors'
 
-
-gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
-
-
 gem 'mail'
 gem 'whenever', :require => false
 gem 'sendgrid-ruby'
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
-#gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: 'master'
+
+##### CUSTOM GEMS CREATED BY SANE CART LLC #######
+gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
+gem 'spree_welcomepage', :path => '../spree_welcomepage'
+gem 'byebug'

@@ -5,87 +5,204 @@
         <figure id="logo" class="col-md-4" data-hook>
           <h1> Sane Cart </h1>
         </figure>
-       <%= render :partial => 'spree/shared/nav_bar' %>
-        
+        <%= render :partial => 'spree/shared/nav_bar' %>
       </div>
-      
     </div>
   </header>
-
-<!-- STYLE FOR SPREE-JETHEADER IS LOCATED IN BOOTSTRAP_CUSTOM -->
-<div id="spree-jetheader">
-  <header id="jetheader" data-hook>
-    <div class="container">
-      <div class="row">
+  <!-- STYLE FOR SPREE-JETHEADER IS LOCATED IN BOOTSTRAP_CUSTOM -->
+  <div id="spree-jetheader">
+    <header id="jetheader" data-hook>
+      <div class="container">
+        <div class="row">
           <ul class="jetmenu yellow">
-     <li class="active"><%= link_to Spree.t(:home), spree.root_path %></li>
-     <li><a href="#">Groceries</a>
-          <div class="megamenu full-width">
-            <div class="row">
-            <div class="col2">
+            <li class="active"><%= link_to Spree.t(:home), spree.root_path %></li>
+            <li>
+              <a href="#">Groceries</a>
+              <div class="megamenu full-width">
+                <div class="row">
+                  <div class="col2">
                     <ul>
-                      <li><a href="#"><h5>Baby Foods</h5></a></li>
-                    <li><a href="#"><h5>Beans</h5></a></li>
-                    <li><a href="#"><h5>Beverages</h5></a></li>
-                    <li><a href="#"><h5>Canned Food</h5></a></li>
-                    <li><a href="#"><h5>Oil and Ghee</h5></a></li>
-                    <li><a href="#"><h5>Chutney/Sauces</h5></a></li>
-                    <li><a href="#"><h5>Cooking Paste/Sauces</h5></a></li>
-                    <li><a href="#"><h5>Dry Fruits/Nuts</h5> </a></li>
-                    <li><a href="#"><h5>Flour</h5></a></li>
-                    <li><a href="#"><h5>Breads</h5></a></li>
+                      <li>
+                        <a href="#">
+                          <h5>Baby Foods</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Beans</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Beverages</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Canned Food</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Oil and Ghee</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Chutney/Sauces</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Cooking Paste/Sauces</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Dry Fruits/Nuts</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Flour</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Breads</h5>
+                        </a>
+                      </li>
                     </ul>
-             </div>
-          <div class="col2">
+                  </div>
+                  <div class="col2">
                     <ul>
-                    <li><a href="#"><h5>IndoChinese</h5></a></li>
-                    <li><a href="#"><h5>InstantMix/Soups</h5></a></li>
-                    <li><a href="#"><h5>Lentils/Dals</h5></a></li>
-                    <li><a href="#"><h5>Mukhwas/MouthFreshner</h5></a></li>
-                    <li><a href="#"><h5>Noodles/Vermicelli</h5></a></li>
-                    <li><a href="#"><h5>Organic</h5></a></li>
-                    <li><a href="#"><h5>Papad</h5></a></li>
-                    <li><a href="#"><h5>Pickles</h5></a></li>
-                    <li><a href="#"><h5>Ready to Eat</h5></a></li>
-                    <li><a href="#"><h5>Spices Whole & Powder</h5></a></li>
+                      <li>
+                        <a href="#">
+                          <h5>IndoChinese</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>InstantMix/Soups</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Lentils/Dals</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Mukhwas/MouthFreshner</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Noodles/Vermicelli</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Organic</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Papad</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Pickles</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Ready to Eat</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Spices Whole & Powder</h5>
+                        </a>
+                      </li>
                     </ul>
-          </div>
-          <div class="col2">
+                  </div>
+                  <div class="col2">
                     <ul>
-                     <li><a href="#"><h5>Spice Mixes</h5></a></li>
-                     <li><a href="#"><h5>Rice</h5></a></li>
-                     <li><a href="#"><h5>Snacks</h5></a></li>
-                     <li><a href="#"><h5>Sweets</h5></a></li>
-                     <li><a href="#"><h5>Tea / Coffee</h5></a></li>
-                     <li><a href="#"><h5>Specials</h5></a></li>
-                       </ul>
-          </div>
-          </div>
-          </div>
-     </li>
-    <li><a href="#">Household</a></li>
-    <li><a href="#">Recipes</a></li>
-    <li><a href="#">Help</a>
-            <ul class="dropdown">
-               <li><a href="#">FAQs</a></li>
-               <li><a href="#">About Us</a></li>
-               <li><a href="#">Contact Us</a></li>
-               <li><a href="#">Return Policy</a></li>
-          </ul> </li>
-    <li id="link-to-cart" data-hook>
-        <noscript>
-          <%= link_to Spree.t(:cart), '/cart' %>
-        </noscript>
-        &nbsp;
-    </li>
-    <script>Spree.fetch_cart()</script>
-
-</ul>
+                      <li>
+                        <a href="#">
+                          <h5>Spice Mixes</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Rice</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Snacks</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Sweets</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Tea / Coffee</h5>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <h5>Specials</h5>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Household</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li>
+              <a href="#">Help</a>
+              <ul class="dropdown">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Return Policy</a></li>
+              </ul>
+            </li>
+            <li id="link-to-cart" data-hook>
+              <noscript>
+                <%= link_to Spree.t(:cart), '/cart' %>
+              </noscript>
+              &nbsp;
+            </li>
+            <script>Spree.fetch_cart()</script>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
   </div>
-
-  </div>
-
-
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#spree-jetheader').affix({
+      offset: {
+        top: $('#header').height()
+      }
+    });
+  });
+</script>
+<style>
+  #spree-jetheader.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+  }
+</style>

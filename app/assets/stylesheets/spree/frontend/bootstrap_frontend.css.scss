@@ -52,3 +52,10 @@ $icon-font-path: "../../bootstrap/";
 h1 {
   margin-bottom: 30px;
 }
+
+#spree-jetheader.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:10;
+}
