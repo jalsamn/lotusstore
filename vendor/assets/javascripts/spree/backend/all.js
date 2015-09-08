@@ -9,3 +9,4 @@
 //= require spree/backend
 //= require spree/backend/spree_deliverymanager
 //= require_tree .
+//= require spree/backend/spree_sanebackyard

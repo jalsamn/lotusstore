@@ -59,3 +59,30 @@ h1 {
   width: 100%;
   z-index:10;
 }
+
+#sidebar{
+  float: right;
+}
+
+@charset "utf-8";
+.custom-sidebar { min-height: 800px;  padding-bottom: 120px;border-left: 1px solid #d9d9d9; position: relative; border-right: 1px solid #d9d9d9; }
+.tp-title { background: #f2f8fd; border-bottom: 1px solid #c6e0f6; padding: 8px 10px; border-top: 1px solid #c6e0f6; font-size: 16px; color: #007dc6;}
+.scroll-bx { height: 500px; overflow-y: scroll; }
+.tp-title .cart-item { float: right; padding-right: 18px; }
+.sub-total-bttm { background: #f2f8fd; padding: 10px; position: relative; width: 100%; bottom: 0; left: 0; right: 0; border-bottom: 1px solid #c6e0f6; padding: 8px 10px; border-top: 1px solid #c6e0f6; }
+ul.sub-tb-bx { list-style: none; margin: 0; padding: 0; }
+ul.sub-tb-bx:after { clear: both; display: block; content: ""; }
+ul.sub-tb-bx li { float: left; width: 50%; line-height: 44px; color: #acacac;}
+ul.sub-tb-bx li.sb { float: right; font-size: 20px; text-align: right; color: #007dc6; font-weight: 600; }
+ul.sub-tb-bx li.sb h4 { display: inline-block; font-size: 22px; }
+.sub-total-bttm .btn { background: #f27321; color: #fff; display: block; width: 100%; }
+ul.cart-list { list-style: none; margin: 0; padding: 0; color: #007dc6; }
+ul.cart-list li:after { clear: both; display: block; content: ""; }
+ul.cart-list li { border-bottom: 1px solid #d9d9d9; padding: 10px; min-height: 76px; }
+ul.cart-list .lf-bx { float: left; width: 75%; position: relative; padding-left: 60px; }
+ul.cart-list .lf-bx .cnt-dic { line-height: 18px; }
+ul.cart-list .lf-bx .cnt-dic span { color: #acacac; }
+ul.cart-list .lf-bx p { margin: 0; color: #000; }
+ul.cart-list .price-bx { float: left; width: 25%; text-align: right; font-size: 22px; }
+ul.cart-list .icon-pic { left: 0; position: absolute; top: 0; width: 50px; }
+ul.cart-list .icon-pic .cer { background: #59b300 none repeat scroll 0 0; border-radius: 50%; color: #fff; display: block; font-size: 12px; height: 18px; line-height: 18px; position: absolute; right: 0; text-align: center; top: 0; width: 18px; }

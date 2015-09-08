@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150723225154) do
+ActiveRecord::Schema.define(version: 20150906065008) do
 
   create_table "aremanagers", force: :cascade do |t|
     t.integer  "zipcode"
@@ -148,6 +148,18 @@ ActiveRecord::Schema.define(version: 20150723225154) do
   add_index "spree_calculators", ["calculable_id", "calculable_type"], name: "index_spree_calculators_on_calculable_id_and_calculable_type"
   add_index "spree_calculators", ["deleted_at"], name: "index_spree_calculators_on_deleted_at"
   add_index "spree_calculators", ["id", "type"], name: "index_spree_calculators_on_id_and_type"
+
+  create_table "spree_cases", force: :cascade do |t|
+    t.integer  "variant_id"
+    t.date     "receivedate"
+    t.date     "expirationdate"
+    t.decimal  "unitpercase"
+    t.integer  "vendor_id"
+    t.decimal  "cost"
+    t.string   "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_countries", force: :cascade do |t|
     t.string   "iso_name"

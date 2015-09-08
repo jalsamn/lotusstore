@@ -64,8 +64,9 @@ gem 'sendgrid-ruby'
 gem 'spree', github: 'spree/spree', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
-
+gem 'spree_ajax_add_to_cart', :git => 'https://github.com/novotarq/spree_ajax_add_to_cart.git',branch: '3-0-stable'
 ##### CUSTOM GEMS CREATED BY SANE CART LLC #######
+gem 'spree_sanebackyard', :path => '../spree_sanebackyard'
 gem 'spree_deliverymanager', github: 'jalsamn/spree_deliverymanager', branch: 'master'
 gem 'spree_welcomepage', :path => '../spree_welcomepage'
 gem 'byebug'

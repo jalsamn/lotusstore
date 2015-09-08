@@ -13,3 +13,4 @@
      jQuery(document).ready(function() {
           $().jetmenu();
      });
+//= require spree/frontend/spree_sanebackyard
