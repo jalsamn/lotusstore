@@ -10,7 +10,23 @@
 //= require spree/frontend/spree_deliverymanager
 //= require_tree .
 
-     jQuery(document).ready(function() {
-          $().jetmenu();
-     });
+$(document).ready(function(){
+  $('.flexslider').flexslider({
+    controlNav: false,
+    directionNav: false,
+    animation: "fade"
+  });
+  $('body').addClass('full').removeClass('half');
+  $(window).scroll(function(){
+    var sticky = $('.header'),
+    scroll = $(window).scrollTop();
+    if (scroll >= 1){
+      sticky.addClass('header-fixed');
+      $('body').addClass('half').removeClass('full');
+    }else{
+      sticky.removeClass('header-fixed');
+      $('body').addClass('full').removeClass('half');
+   }
+ });
+});
 //= require spree/frontend/spree_sanebackyard

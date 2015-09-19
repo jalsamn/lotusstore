@@ -1,21 +1,20 @@
-<div id="spree-header">
+<!-- <div id="spree-header">
   <header id="header" data-hook>
     <div class="container">
       <div class="row">
         <figure id="logo" class="col-md-4" data-hook>
           <h1> Sane Cart </h1>
         </figure>
-        <%= render :partial => 'spree/shared/nav_bar' %>
+        <%#= render :partial => 'spree/shared/nav_bar' %>
       </div>
     </div>
   </header>
-  <!-- STYLE FOR SPREE-JETHEADER IS LOCATED IN BOOTSTRAP_CUSTOM -->
   <div id="spree-jetheader">
     <header id="jetheader" data-hook>
       <div class="container">
         <div class="row">
           <ul class="jetmenu yellow">
-            <li class="active"><%= link_to Spree.t(:home), spree.root_path %></li>
+            <li class="active"><%#= link_to Spree.t(:home), spree.root_path %></li>
             <li>
               <a href="#">Groceries</a>
               <div class="megamenu full-width">
@@ -178,7 +177,7 @@
             </li>
             <li id="link-to-cart" data-hook>
               <noscript>
-                <%= link_to Spree.t(:cart), '/cart' %>
+                <%#= link_to Spree.t(:cart), '/cart' %>
               </noscript>
               &nbsp;
             </li>
@@ -188,14 +187,1357 @@
       </div>
     </header>
   </div>
+</div> -->
+<nav class="header navbar navbar-default navbar-fixed-top">
+  <div class="head-row1">
+    <div class="container">
+      <div class="top-nav">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>Gift Cards<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Shop Gift Cards</a></li>
+              <li><a href="#">Check Card Balances</a></li>
+              <li><a href="#">Corporate Gift Cards</a></li>
+            </ul>
+          </li>
+          <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>Registry<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Boby Registry</a></li>
+              <li><a href="#">Wedding Registry</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-list"></i>List</a></li>
+          <li role="presentation" class="dropdown store-bx"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gift"></i>Store Finder<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <p>Stor a Store</p>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter city, state or zip code">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Find</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-map-marker"></i>Track Order</a></li>
+          <li><a href="#"><i class="fa fa-credit-card"></i>Credit Card</a></li>
+          <li><a href="#"><i class="fa fa-info-circle"></i>Help</a></li>
+        </ul>
+      </div>
+      <div class="head-middle">
+      <aside class="pull-left navbar-brand"><a href="#"><img src="/assets/lotus.png" alt=""/></a></aside>
+        <aside class="pull-left search-mid">
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">Search<span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <ul class="block-list">
+                  <li>
+                    <button type="button" data-cat-id="0" class="no-margin font-semibold" tabindex="-1">All Departments</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="91083" class="no-margin font-semibold" tabindex="-1">Auto &amp; Tires</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5427" class="no-margin font-semibold" tabindex="-1">Baby</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="1085666" class="no-margin font-semibold" tabindex="-1">Beauty</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="3920" class="no-margin font-semibold" tabindex="-1">Books</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="1105910" class="no-margin font-semibold" tabindex="-1">Cell Phones</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5438" class="no-margin font-semibold" tabindex="-1">Clothing</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="3944" class="no-margin font-semibold" tabindex="-1">Electronics</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="976759" class="no-margin font-semibold" tabindex="-1">Food</button>
+                  </li>
+                </ul>
+                <ul class="block-list">
+                  <li>
+                    <button type="button" data-cat-id="1094765" class="no-margin font-semibold" tabindex="-1">Gifts &amp; Registry</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="976760" class="no-margin font-semibold" tabindex="-1">Health</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="4044" class="no-margin font-semibold" tabindex="-1">Home</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="1072864" class="no-margin font-semibold" tabindex="-1">Home Improvement</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="1115193" class="no-margin font-semibold" tabindex="-1">Household Essentials</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="3891" class="no-margin font-semibold" tabindex="-1">Jewelry</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="4096" class="no-margin font-semibold" tabindex="-1">Movies</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="4104" class="no-margin font-semibold" tabindex="-1">Music</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="1229749" class="no-margin font-semibold" tabindex="-1">Office</button>
+                  </li>
+                </ul>
+                <ul class="block-list">
+                  <li>
+                    <button type="button" data-cat-id="2637" class="no-margin font-semibold" tabindex="-1">Party &amp; Occasions</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5428" class="no-margin font-semibold" tabindex="-1">Patio &amp; Garden</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5440" class="no-margin font-semibold" tabindex="-1">Pets</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5431" class="no-margin font-semibold" tabindex="-1">Pharmacy</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5426" class="no-margin font-semibold" tabindex="-1">Photo Center</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="4125" class="no-margin font-semibold" tabindex="-1">Sports &amp; Outdoors</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="4171" class="no-margin font-semibold" tabindex="-1">Toys</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="2636" class="no-margin font-semibold" tabindex="-1">Video Games</button>
+                  </li>
+                  <li>
+                    <button type="button" data-cat-id="5436" class="no-margin font-semibold" tabindex="-1">Help</button>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <!-- /btn-group -->
+            <input type="text" aria-label="Text input with dropdown button" placeholder="Search" class="form-control">
+            <button class="searchbar-submit" type="submit"><i class="fa fa-search "></i></button>
+          </div>
+        </aside>
+        <aside class="pull-right cart-head">
+          <ul class="nav nav-pills">
+            <li role="presentation" class="dropdown"><span class="signin-txt">Hello.<a href="#" class="signin">Sign In</a></span><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sign In<span>View my account</span></a></li>
+                <li><a href="#">Create an Account<span>Get more out of Walmart.com</span></a></li>
+              </ul>
+            </li>
+            <li class="cart-icon">
+              <a href="/cart"><i class="fa fa- fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+  <div class="container head-bttm">
+
+    <div role="toolbar" class="btn-toolbar sidebarmenu">
+      <div class="btn-group">
+        <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" class="btn btn-default dropdown-toggle"><span class="fa fa-navicon"></span>
+          <span class="text-no">All Departments</span> <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu sidemunu">
+          <li><b>Savings Center</b></li>
+          <li><a href="#">Electronics & Office</a>
+            <div class="full-menu">
+              <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+              <div class="row">
+               <div class="col-sm-3">
+                 <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                 <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+               <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+               <ul class="nav">
+                <li><a href="#">Value of the Day</a></li>
+                <li><a href="#">Tips &amp; Ideas</a></li>
+                <li><a href="#">Savings Catcher</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+             <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+             <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li><a href="#">Value of the Day</a></li>
+              <li><a href="#">Tips &amp; Ideas</a></li>
+              <li><a href="#">Savings Catcher</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Electronics & Office</a>
+      <div class="full-menu">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+            <ul class="nav">
+              <li> <a href="#">Shop all</a> </li>
+              <li> <a href="#">Blu-ray Discs</a> </li>
+              <li> <a href="#">Instawatch</a> </li>
+              <li> <a href="#">Movies</a> </li>
+              <li> <a href="#">New Releases</a> </li>
+              <li> <a href="#">Preorders</a> </li>
+              <li> <a href="#">TV Shows</a> </li>
+              <li> <a href="#">Video on Demand by VUDU</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6">
+          <img src="/assets/1.png" alt="" />
+          </div>
+        </li>
+        <li><a href="#">Electronics & Office</a>
+          <div class="full-menu">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <div class="row">
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+              <img src="/assets/1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="#">Electronics & Office</a>
+          <div class="full-menu">
+            <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+            <div class="row">
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Shop Electronics <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li><a href="#">Value of the Day</a></li>
+                  <li><a href="#">Tips &amp; Ideas</a></li>
+                  <li><a href="#">Savings Catcher</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+              <img src="/assets/1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Electronics & Office</a>
+          <div class="full-menu">
+            <div class="row">
+              <div class="col-sm-3">
+                <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li> <a href="#">Shop all</a> </li>
+                  <li> <a href="#">Blu-ray Discs</a> </li>
+                  <li> <a href="#">Instawatch</a> </li>
+                  <li> <a href="#">Movies</a> </li>
+                  <li> <a href="#">New Releases</a> </li>
+                  <li> <a href="#">Preorders</a> </li>
+                  <li> <a href="#">TV Shows</a> </li>
+                  <li> <a href="#">Video on Demand by VUDU</a> </li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li> <a href="#">Shop all</a> </li>
+                  <li> <a href="#">Blu-ray Discs</a> </li>
+                  <li> <a href="#">Instawatch</a> </li>
+                  <li> <a href="#">Movies</a> </li>
+                  <li> <a href="#">New Releases</a> </li>
+                  <li> <a href="#">Preorders</a> </li>
+                  <li> <a href="#">TV Shows</a> </li>
+                  <li> <a href="#">Video on Demand by VUDU</a> </li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <h4>Movies &amp; TV&nbsp; <i class="fa fa-caret-right"></i></h4>
+                <ul class="nav">
+                  <li> <a href="#">Shop all</a> </li>
+                  <li> <a href="#">Blu-ray Discs</a> </li>
+                  <li> <a href="#">Instawatch</a> </li>
+                  <li> <a href="#">Movies</a> </li>
+                  <li> <a href="#">New Releases</a> </li>
+                  <li> <a href="#">Preorders</a> </li>
+                  <li> <a href="#">TV Shows</a> </li>
+                  <li> <a href="#">Video on Demand by VUDU</a> </li>
+                  <li> <a href="#">Movies</a> </li>
+                  <li> <a href="#">New Releases</a> </li>
+                  <li> <a href="#">Preorders</a> </li>
+                  <li> <a href="#">TV Shows</a> </li>
+                  <li> <a href="#">Video on Demand by VUDU</a> </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-3">
+              <img src="/assets/2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="main-menu">
+    <ul class="nav navbar-nav">
+      <li><a href="#">My Local Store</a>
+      </li>
+      <li><a href="#">Value of the Day</a></li>
+      <li><a href="#">Tips &amp; Ideas</a></li>
+      <li><a href="#">Savings Catcher</a></li>
+    </ul>
+  </nav>
+
+  <div class="pull-right head-fade-bx">
+
+    <div class="flexslider">
+      <ul class="slides">
+        <li><p> FREE SHIPPING on $50 orders </p>
+        </li>
+
+        <li> <p>FREE in-store pickup </p>
+        </li>
+        <li><p> FREE SHIPPING on $50 orders </p>
+        </li>
+        <li> <p>FREE in-store pickup </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 </div>
+</nav>
 <script type="text/javascript">
   $(document).ready(function(){
-    $('#spree-jetheader').affix({
-      offset: {
-        top: $('#header').height()
-      }
-    });
+//     $('#spree-jetheader').affix({
+//       offset: {
+//         top: $('#header').height()
+//       }
+//     });
+
   });
 </script>
 <style>
